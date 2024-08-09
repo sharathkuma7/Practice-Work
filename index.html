@@ -82,7 +82,7 @@ console.log("Insufficient balance.");
 } else { 
 console.log("Please log in to continue."); 
 } 
-What is the ouput of the above code  _______________________________ 
+What is the ouput of the above code  _______Insufficient balance________________________ 
 
 
 2) 
@@ -93,14 +93,14 @@ console.log("Good weather for a picnic.");
 } else { 
 console.log("Maybe another day."); 
 } 
-What is the ouput of the above code  _______________________________ 
+What is the ouput of the above code  _______Good weather for a picnic________________________ 
 
 
 3) 
 for (let i = 0; i < 5; i++) { 
 console.log(`Number ${i-1}`); 
 } 
-What is the ouput of the above code  _______________________________ 
+What is the ouput of the above code  _______________Number-1 to Number 3________________ 
 
 
 4) 
@@ -110,14 +110,17 @@ break; // Exits the loop when i is 5
 } 
 console.log(`Number ${i}`); 
 } 
-What is the ouput of the above code  _______________________________ 
+What is the ouput of the above code  ___________not outpt____________________ 
 
 
 5) 
 for (let i = 5; i >= 0; i=i-2) { 
 console.log(`Countdown: ${i}`); 
 } 
-What is the ouput of the above code  _______________________________ 
+What is the ouput of the above code  _____ Countdown: 5
+Countdown: 3
+Countdown: 1
+__________ 
 
 
 6) 
@@ -133,7 +136,7 @@ break;
 default: 
 console.log("Different calculation"); 
 } 
-What is the ouput of the above code ________________________________ 
+What is the ouput of the above code __________Difference is 2______________________ 
 
 
 7) 
@@ -164,7 +167,7 @@ break;
 default: 
 console.log("Invalid user type."); 
 } 
-What is the ouput of the above code ___________________________________ 
+What is the ouput of the above code ______________User creating..._____________________ 
 
 
 8) 
@@ -173,10 +176,13 @@ while (true) {
 count++; 
 console.log(`Count: ${count}`); 
 if (count === 5)  
+<!-- {} -->
 break; 
 count++ 
 } 
-What is the ouput of the above code _________________________________ 
+What is the ouput of the above code __________count: 1
+count: 3
+count: 5 ___//two times increament
 
 
 9) 
@@ -185,14 +191,20 @@ do {
 console.log(`Number ${j}`); 
 j++; 
 } while (j < 5 && j++); 
-What is the ouput of the above code __________________________________ 
+What is the ouput of the above code ______Number: 0
+Number: 2
+Number: 4____________________________ 
 
 
 10) 
 Write a single line code to remove the element “duke”  from the given bikes 
 array 
-arr = [ “Pulsar”, “Duke”, “V3”, “Glamour”, “RX” ] 
+arr = [ "Pulsar", "Duke", "V3", "Glamour", "RX" ] 
 Write your code here _________________________________ 
+arr = [ "Pulsar", "Duke", "V3", "Glamour", "RX" ] 
+
+arr.splice(1.0,"Glamour")
+console.log(arr)
 
 
 11) 
@@ -203,6 +215,27 @@ Explanation: The 10 fibonnacci numbers are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
 Among the fib numbers the odd numbers fib numbers are 1, 1, 3, 5, 13, 21 and 
 their sum is 44 
 
+//
+   num=prompt(" enter the no of serirs:")
+   a=0
+   b=1
+   i=1
+   sum=0
+   while(i<=num){
+      if(a%2==1){
+         sum=sum+a
+      // console.log(a)
+   }
+      c=a+b
+      a=b
+      b=c
+      i++
+   }
+   console.log(sum)//1+1+3=5
+//
+
+
+
 
 12) 
 Write a program to print the factorial value of the largest digit in the given 
@@ -211,8 +244,36 @@ Input: Enter a number: 3511
 Output: Factorial of the maximum number is : 120 
 Explanation: In the given number 3511, the largest digit is 5. The factorial of 5 
 is 120. 
+
+
+//
+num=prompt("enther the number:")//3511
+max=num[0]
+prod=1
+for(i=1;i<num.length;i++){
+   if(num[i]>max){
+      max=num[i]
+   }
+}
+for(i=1;i<=max;i++){
+   prod=prod*i
+}
+console.log("Factorial of the maximum number is "+prod);
+//
 </b></pre>
 
+ <h5>DATE:- 09-08-2024</h5>
+ <pre>
+1) WAP to separate digits and alphabets in the given number
+
+   input: Hello20World
+   output: 20HelloWorld
+
+2) WAP to print the number which are equal to each other
+
+   input: 474877
+   output : 44777
+ </pre>
     
 </body>
 </html>
